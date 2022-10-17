@@ -17,10 +17,10 @@ describe('integration test', () => {
     // side effect
     const savedStudent = await prisma.student.findFirst({
       where: {
-        name: 'juvelina'
+        name: 'juvelino'
       }
     });
 
-    expect(savedStudent).not.toBeNull();
+    expect(savedStudent).toBeNull();
   });
 });
