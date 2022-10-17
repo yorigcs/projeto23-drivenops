@@ -21,6 +21,6 @@ describe('integration test', () => {
       }
     });
 
-    expect(savedStudent).not.toBeNull();
+    expect(savedStudent).toBeNull();
   });
 });
